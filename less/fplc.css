@@ -1,6 +1,6 @@
 .toc-wrapper {
     position: fixed;
-    top: 90px;
+    top: 150px;
     right: 50%;
     margin-right: -600px;
     transition: all .24s ease-out;
@@ -67,4 +67,30 @@ a {
 
 .toc-wrapper a {
     display: inline-block;
+}
+
+
+.highlight.html {
+    overflow: auto;
+    height: 500px;
+}
+
+img[data-newtab-img=true] {
+    cursor: pointer;
+}
+
+blockquote {
+    border-left: 3px solid #fe7f27;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.sm-bottom {
+    margin-bottom: 10px;
 }

@@ -211,7 +211,7 @@ var customSearch;
 		// getPicture();
 
 
-		$(".article .video-container").fitVids();
+		//$(".article .video-container").fitVids();
 
 		setTimeout(function () {
 			$('#loading-bar-wrapper').fadeOut(500);
@@ -254,4 +254,16 @@ var customSearch;
 
 	});
 
+
+	$(document).on('click', '[data-newtab-img=true]', function(event) {
+        event.preventDefault();
+		var src = $(this).prop('src');
+        window.open(src)
+    });
+
+	$(document).on('click', '[data-preview-btn=true]', function(event) {
+        event.preventDefault();
+		var src =  $(this).attr('data-preview-url') || $(this).prop('href') || $(this).prop('src') || $(this).prop('value');
+        window.open(src);
+    })
 })(jQuery);
