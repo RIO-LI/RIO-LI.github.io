@@ -1,0 +1,125 @@
+.multiselect {
+	background: #fff;
+}
+
+.multiselect-options {
+	width: 400px;
+	height: 450px;
+	border: 1px solid #e2e2e2;
+	float: left;
+	display:-ms-flexbox;
+	-moz-box-orient:verical;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+}
+
+.options-header {
+	padding: 5px 60px 4px 10px;
+	position: relative;	
+	border-bottom: 1px solid #e2e2e2;
+}
+.options-header .multiselct-input {
+	height: 30px;
+	margin: 0 5px 0 -5px;
+	display: inline-block;
+	width: 160px;
+}
+
+.options-header .btn-mulit-search {
+	width: 55px;
+	height: 28px;
+	line-height: 14px;
+	position: absolute;
+	top: 6px;
+	right: 5px;
+
+}
+.options-body {
+	-moz-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.options-body .multiselect-item button {
+	display: none;
+}
+.multiselect-item {
+	line-height: 40px;
+	padding: 0 35px 0 31px;
+	position: relative;
+	border-left: 4px solid transparent;
+	border-bottom: 1px solid #e2e2e2;
+	cursor: pointer;
+}
+
+.multiselect-item button {
+	position: absolute;
+	-webkit-appearance: none;
+	top: 0;
+	right: 0;
+	width: 35px;
+	height: 100%;
+	border: transparent;
+	background: transparent;
+	outline: none;
+}
+.multiselect-item.active {
+	background: #f2f2f2;
+	color: #fc6811;
+	border-left: 4px solid #fc6821;
+}
+
+.multiselect-actions {
+	float: left;
+	width: 70px;
+	padding: 120px 5px 5px 5px;
+}
+
+.multiselect-actions a {
+	width: 100%;
+	margin: 5px 0;
+}
+.multiselect-selected {
+	float: left;
+	width: 400px;
+	height: 450px;
+	position: relative;
+}
+.selected-header {
+	width: 130px;
+	height: 37px;
+	line-height: 35px;
+	border-top: 2px solid #ff6800;
+	border-left: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	color: #fe7f27;
+	text-align: center;
+	font-size: 14px;
+}
+.selected-body {
+	height: 365px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+}
+.multiselect-selected .selected-actions {
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border: 1px solid #e2e2e2;
+}
+.multiselect-selected .selected-actions .multiselect-clearall {
+	height: 50px;
+	line-height: 40px;
+}
+.multiselect-selected .selected-actions button {
+	background: transparent;
+	border: transparent;
+	outline: none;
+}
